@@ -131,6 +131,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   color:var(--nyp-ink-soft); font-size:12.5px; font-weight:500;
   padding:16px 22px; min-width:140px; text-align:center;
 }
+.nyp-logo-strip-img{
+  height:42px; width:auto; max-width:150px; object-fit:contain; flex-shrink:0;
+}
 
 /* ---------- SECTION shared ---------- */
 section{padding:96px 0;}
