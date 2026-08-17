@@ -95,10 +95,6 @@ archivo (`/insights/` o similar) — no existe todavía.
   Dansa València, CCPE) en `assets/logos/`. El CCPE es una marca clara y va
   envuelto en un chip oscuro (`.nyp-logo-strip-chip`) para mantener contraste
   sobre el papel; el resto va directo.
-- **`MAILERLITE_FORM_ID`** en `script.js`: la cuenta de MailerLite (`38397`) ya
-  está en uso en la web actual, pero el formulario que separa nombre/email/tipo
-  de organización sin el campo mensaje aún no existe — crearlo y sustituir la
-  constante.
 - **`CONTACT_SERVICE_URL`** en `script.js`: apunta a un dominio provisional
   (`contacto.nodosypublicos.com`); actualizar con la URL real una vez desplegado
   el recurso Coolify del microservicio.

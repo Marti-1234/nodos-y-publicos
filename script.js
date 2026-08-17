@@ -2,14 +2,12 @@
   'use strict';
 
   /* ------------------------------------------------------------------
-   * MailerLite — cuenta ya utilizada en nodosypublicos.com (visible en
-   * el código público del sitio actual). MAILERLITE_FORM_ID es un
-   * placeholder: sustituir por el ID real en cuanto se cree el nuevo
-   * formulario (solo nombre + email + tipo de organización, sin el
-   * campo "mensaje", que va al microservicio propio).
+   * MailerLite — cuenta ya utilizada en nodosypublicos.com. Formulario
+   * dedicado (solo nombre + email + tipo de organización, sin el campo
+   * "mensaje", que va al microservicio propio).
    * ------------------------------------------------------------------ */
   const MAILERLITE_ACCOUNT_ID = '38397';
-  const MAILERLITE_FORM_ID = 'REPLACE_WITH_NEW_FORM_ID';
+  const MAILERLITE_FORM_ID = '196072170508519379';
 
   /* Segundo recurso Coolify (microservicio de contacto). Sustituir por
    * la URL real una vez desplegado. */
