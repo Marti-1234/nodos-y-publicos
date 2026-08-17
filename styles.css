@@ -55,14 +55,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   border-bottom:1px solid var(--nyp-line-soft);
 }
 .nyp-header-inner{
-  max-width:var(--nyp-maxw); margin:0 auto; padding:14px 32px;
-  display:flex; align-items:center; justify-content:space-between; gap:24px;
+  max-width:var(--nyp-maxw); margin:0 auto; padding:14px 24px;
+  display:flex; align-items:center; justify-content:space-between; gap:16px;
 }
-.nyp-logo{display:inline-flex; align-items:center; gap:11px; text-decoration:none;}
-.nyp-logo-icon{height:38px; width:38px; border-radius:9px; flex-shrink:0;}
-.nyp-logo-word{height:24px; width:auto;}
-.nyp-nav{display:flex; align-items:center; gap:30px;}
-.nyp-nav-links{display:flex; gap:26px; list-style:none; margin:0; padding:0;}
+.nyp-logo{display:inline-flex; align-items:center; gap:8px; text-decoration:none; flex-shrink:0;}
+.nyp-logo-icon{height:24px; width:24px; border-radius:6px; flex-shrink:0;}
+.nyp-logo-word{height:15px; width:auto;}
+.nyp-nav{display:flex; align-items:center; gap:14px;}
+.nyp-nav-links{display:flex; gap:16px; list-style:none; margin:0; padding:0; flex-wrap:nowrap; white-space:nowrap;}
 .nyp-nav-links a{
   text-decoration:none; font-size:15px; font-weight:500; color:var(--nyp-ink);
   position:relative; padding-bottom:3px;
