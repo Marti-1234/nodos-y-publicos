@@ -37,8 +37,11 @@ idioma guardado en `localStorage` al cargar y al hacer clic en ES/EN.
 
 ## Pendiente de confirmar con Martí
 
-- **Logos de "Legitimidad"**: la sección tiene placeholders (`<!-- LOGO: institución -->`
-  en `index.html`) hasta tener el listado real de instituciones.
+- **Logos de "Legitimidad"**: los 6 huecos ya están rellenos (AECID, ICOM,
+  Gobierno de la República Dominicana/Cultura, UNESCO/Mondiacult 25 España,
+  Dansa València, CCPE) en `assets/logos/`. El CCPE es una marca clara y va
+  envuelto en un chip oscuro (`.nyp-logo-strip-chip`) para mantener contraste
+  sobre el papel; el resto va directo.
 - **`MAILERLITE_FORM_ID`** en `script.js`: la cuenta de MailerLite (`38397`) ya
   está en uso en la web actual, pero el formulario que separa nombre/email/tipo
   de organización sin el campo mensaje aún no existe — crearlo y sustituir la
