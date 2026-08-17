@@ -165,9 +165,15 @@
       tipo_organizacion: form.tipo_organizacion.value,
       mensaje: form.mensaje.value.trim(),
     };
+    const consentPrivacy = form.consent_privacy.checked;
+    const consentNewsletter = form.consent_newsletter.checked;
 
     if (!data.nombre || !data.email || !data.tipo_organizacion || !data.mensaje) {
       setStatus('form.statusIncomplete', 'warn');
+      return;
+    }
+    if (!consentPrivacy) {
+      setStatus('form.statusConsent', 'warn');
       return;
     }
 
@@ -176,10 +182,15 @@
     submitLabel.textContent = window.NYP_I18N[currentLang]['form.sending'];
     setStatus(null, null);
 
-    const [mlResult, serviceResult] = await Promise.allSettled([
-      submitToMailerLite(data),
-      submitToContactService(data),
-    ]);
+    /* RGPD: el envío del mensaje (interés legítimo en responder la consulta)
+     * y la suscripción a la lista de MailerLite (marketing) requieren
+     * consentimientos distintos. Solo se llama a MailerLite si la persona
+     * ha marcado explícitamente la casilla de newsletter. */
+    const tasks = [submitToContactService(data)];
+    if (consentNewsletter) tasks.unshift(submitToMailerLite(data));
+    else tasks.unshift(Promise.resolve({ skipped: true }));
+
+    const [mlResult, serviceResult] = await Promise.allSettled(tasks);
 
     submitBtn.disabled = false;
     submitBtn.removeAttribute('aria-busy');
@@ -188,7 +199,7 @@
     if (serviceResult.status === 'fulfilled') {
       setStatus('form.statusOk', 'ok');
       form.reset();
-    } else if (mlResult.status === 'fulfilled') {
+    } else if (consentNewsletter && mlResult.status === 'fulfilled') {
       setStatus('form.statusWarn', 'warn');
     } else {
       setStatus('form.statusError', 'error');

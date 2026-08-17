@@ -312,6 +312,15 @@ section{padding:96px 0;}
 .nyp-form-field input:focus,
 .nyp-form-field textarea:focus,
 .nyp-form-field select:focus{outline:2px solid var(--nyp-orange); border-color:transparent;}
+.nyp-form-checks{display:flex; flex-direction:column; gap:12px; margin-top:20px;}
+.nyp-form-check{
+  display:flex; align-items:flex-start; gap:10px; cursor:pointer;
+  font-size:13.5px; color:rgba(255,255,255,0.65); line-height:1.5;
+}
+.nyp-form-check input{
+  flex-shrink:0; width:17px; height:17px; margin-top:2px; accent-color:var(--nyp-orange);
+}
+.nyp-form-check a{color:rgba(255,255,255,0.85); text-decoration:underline;}
 .nyp-form-submit{margin-top:28px;}
 .nyp-form-submit button{
   background:var(--nyp-orange); border:none; border-radius:3px;

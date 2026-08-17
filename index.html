@@ -382,6 +382,16 @@
         <label for="nyp-message" data-i18n="form.message">Mensaje</label>
         <textarea id="nyp-message" name="mensaje" maxlength="1024" required></textarea>
       </div>
+      <div class="nyp-form-checks">
+        <label class="nyp-form-check">
+          <input type="checkbox" id="nyp-consent-privacy" name="consent_privacy" required>
+          <span data-i18n="form.consentPrivacy">He leído y acepto la <a href="https://nodosypublicos.com/privacidad/" target="_blank" rel="noopener">política de privacidad</a>.</span>
+        </label>
+        <label class="nyp-form-check">
+          <input type="checkbox" id="nyp-consent-newsletter" name="consent_newsletter">
+          <span data-i18n="form.consentNewsletter">Quiero recibir recursos sobre IA y gestión cultural (puedes darte de baja cuando quieras).</span>
+        </label>
+      </div>
       <div class="nyp-form-submit">
         <button type="submit" id="nyp-form-submit-btn">
           <span class="nyp-form-spinner" aria-hidden="true"></span>
@@ -392,7 +402,6 @@
     </form>
 
     <p class="nyp-form-legal">
-      <span data-i18n="form.legal">Al enviar este formulario aceptas nuestra <a href="https://nodosypublicos.com/privacidad/" target="_blank" rel="noopener">política de privacidad</a>.</span>
       <span class="nyp-form-note" data-i18n="form.note">Respondemos en menos de 24h laborables.</span>
     </p>
   </div>
