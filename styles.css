@@ -215,12 +215,6 @@ section{padding:96px 0;}
   background:var(--nyp-paper); border:1px solid var(--nyp-line); border-radius:6px; padding:26px;
 }
 .nyp-case-card-ext{position:relative;}
-.nyp-case-ext-tag{
-  display:inline-block; font-family:var(--nyp-display); font-weight:600; font-size:11px;
-  letter-spacing:0.08em; text-transform:uppercase; color:var(--nyp-ink-soft);
-  background:var(--nyp-paper-alt); border:1px solid var(--nyp-line); border-radius:12px;
-  padding:3px 10px; margin-bottom:12px;
-}
 .nyp-case-card h3{font-size:20px;}
 .nyp-case-card p{font-size:14px; color:var(--nyp-ink-soft); margin-top:12px;}
 .nyp-case-featured{
