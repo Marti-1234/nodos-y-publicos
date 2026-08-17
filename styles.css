@@ -159,7 +159,12 @@ section{padding:96px 0;}
 .nyp-resolve-card{background:var(--nyp-paper); padding:30px 22px; min-height:230px; display:flex; flex-direction:column;}
 .nyp-resolve-num{font-family:var(--nyp-display); font-weight:700; font-size:15px; color:var(--nyp-orange);}
 .nyp-resolve-card h3{font-size:19.5px; margin-top:14px; line-height:1.12;}
-.nyp-resolve-card p{font-size:14.5px; color:var(--nyp-ink-soft); margin-top:12px; flex:1;}
+.nyp-resolve-card p:not(.nyp-resolve-result){font-size:14.5px; color:var(--nyp-ink-soft); margin-top:12px; flex:1;}
+.nyp-resolve-result{
+  font-size:14px; color:var(--nyp-ink); font-weight:600; margin-top:14px;
+  padding-top:12px; border-top:1px solid var(--nyp-line-soft);
+}
+.nyp-resolve-result b{color:var(--nyp-orange-deep); font-weight:700;}
 .nyp-resolve-cta{margin-top:40px; text-align:center;}
 .nyp-text-cta{
   display:inline-flex; align-items:center; gap:8px; text-decoration:none; color:var(--nyp-ink);
