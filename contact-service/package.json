@@ -1,0 +1,14 @@
+{
+  "name": "nodos-y-publicos-contact-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Microservicio de envío del formulario de contacto (mensaje libre) de nodosypublicos.com por SMTP (Gandi).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.14"
+  }
+}
