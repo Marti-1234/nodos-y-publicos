@@ -216,7 +216,12 @@ section{padding:96px 0;}
 }
 .nyp-case-card-ext{position:relative;}
 .nyp-case-card h3{font-size:20px;}
-.nyp-case-card p{font-size:14px; color:var(--nyp-ink-soft); margin-top:12px;}
+.nyp-case-card p:not(.nyp-case-result){font-size:14px; color:var(--nyp-ink-soft); margin-top:12px;}
+.nyp-case-result{
+  font-size:13.5px; color:var(--nyp-ink); font-weight:600; margin-top:14px;
+  padding-top:12px; border-top:1px solid var(--nyp-line-soft);
+}
+.nyp-case-result b{color:var(--nyp-orange-deep); font-weight:700;}
 .nyp-case-featured{
   grid-column:1 / -1;
   background:var(--nyp-ink); color:#fff; border:none; border-radius:8px; padding:40px;
