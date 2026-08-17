@@ -11,10 +11,29 @@ infraestructura donde está alojada la web de Vindra.
 ```
 index.html        página única, en la raíz
 styles.css         sistema de diseño (extraído del CSS real de nodosypublicos.com)
-script.js          nav móvil + envío del formulario de contacto
+i18n.js            diccionario de traducción ES/EN
+script.js          idioma (ES/EN) + nav móvil + envío del formulario de contacto
 assets/            favicons y logotipo
 contact-service/   microservicio independiente (mensaje libre → email por SMTP)
 ```
+
+## Bilingüe (ES/EN)
+
+El toggle ES/EN del header traduce el contenido en cliente (mismo patrón que
+la web actual): cada texto traducible lleva `data-i18n="clave"` en
+`index.html`, y `i18n.js` centraliza las cadenas ES/EN. `script.js` aplica el
+idioma guardado en `localStorage` al cargar y al hacer clic en ES/EN.
+
+- El desplegable "Tipo de organización" traduce solo el texto visible; el
+  `value` que se envía a MailerLite / al microservicio se mantiene siempre en
+  español (las 8 categorías canónicas), para no duplicar taxonomías en el
+  backend.
+- La nota "these articles are currently published in Spanish only" solo se
+  muestra cuando el idioma activo es inglés (los artículos del blog real
+  siguen publicándose solo en español).
+- Esta traducción es solo de interfaz (client-side): no hay URLs `/en/`
+  independientes ni `hreflang`, igual que en el comportamiento actual del
+  sitio.
 
 ## Pendiente de confirmar con Martí
 

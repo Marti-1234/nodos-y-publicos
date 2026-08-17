@@ -15,19 +15,72 @@
    * la URL real una vez desplegado. */
   const CONTACT_SERVICE_URL = 'https://contacto.nodosypublicos.com/send';
 
+  const LANG_STORAGE_KEY = 'nyp-lang';
+
+  /* ---------------- Idioma (ES/EN) ---------------- */
+  const titleEl = document.getElementById('nyp-title');
+  const metaDescEl = document.getElementById('nyp-meta-desc');
+  const insightNoteEl = document.getElementById('nyp-insight-note');
+  const burgerEl = document.getElementById('nyp-burger');
+  const langButtons = document.querySelectorAll('.nyp-lang button');
+
+  let currentLang = 'es';
+
+  function applyLanguage(lang) {
+    const dict = window.NYP_I18N[lang];
+    if (!dict) return;
+    currentLang = lang;
+
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-i18n]').forEach((el) => {
+      const key = el.getAttribute('data-i18n');
+      const value = dict[key];
+      if (value === undefined) return;
+      if (el.tagName === 'OPTION') {
+        el.textContent = value;
+      } else {
+        el.innerHTML = value;
+      }
+    });
+
+    if (titleEl) titleEl.textContent = dict['meta.title'];
+    if (metaDescEl) metaDescEl.setAttribute('content', dict['meta.description']);
+    if (burgerEl) burgerEl.setAttribute('aria-label', dict['burger.ariaLabel']);
+
+    if (insightNoteEl) {
+      if (lang === 'en' && dict['insights.note']) {
+        insightNoteEl.textContent = dict['insights.note'];
+        insightNoteEl.style.display = 'block';
+      } else {
+        insightNoteEl.style.display = 'none';
+      }
+    }
+
+    langButtons.forEach((btn) => {
+      btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+    });
+
+    localStorage.setItem(LANG_STORAGE_KEY, lang);
+  }
+
+  langButtons.forEach((btn) => {
+    btn.addEventListener('click', () => applyLanguage(btn.getAttribute('data-lang')));
+  });
+
+  applyLanguage(localStorage.getItem(LANG_STORAGE_KEY) === 'en' ? 'en' : 'es');
+
   /* ---------------- Navegación móvil ---------------- */
-  const burger = document.getElementById('nyp-burger');
   const mobileNav = document.getElementById('nyp-mobile-nav');
 
-  if (burger && mobileNav) {
-    burger.addEventListener('click', () => {
+  if (burgerEl && mobileNav) {
+    burgerEl.addEventListener('click', () => {
       const isOpen = mobileNav.classList.toggle('nyp-open');
-      burger.setAttribute('aria-expanded', String(isOpen));
+      burgerEl.setAttribute('aria-expanded', String(isOpen));
     });
     mobileNav.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', () => {
         mobileNav.classList.remove('nyp-open');
-        burger.setAttribute('aria-expanded', 'false');
+        burgerEl.setAttribute('aria-expanded', 'false');
       });
     });
   }
@@ -40,9 +93,9 @@
   const submitLabel = submitBtn.querySelector('.nyp-form-submit-label');
   const statusEl = document.getElementById('nyp-form-status');
 
-  function setStatus(message, tone) {
-    statusEl.textContent = message;
-    statusEl.className = 'nyp-form-status nyp-show' + (tone ? ' nyp-status-' + tone : '');
+  function setStatus(key, tone) {
+    statusEl.textContent = key ? window.NYP_I18N[currentLang][key] : '';
+    statusEl.className = 'nyp-form-status' + (key ? ' nyp-show' : '') + (tone ? ' nyp-status-' + tone : '');
   }
 
   /* Envío a MailerLite: se hace mediante un POST de formulario real a
@@ -114,14 +167,14 @@
     };
 
     if (!data.nombre || !data.email || !data.tipo_organizacion || !data.mensaje) {
-      setStatus('Completa todos los campos antes de enviar.', 'warn');
+      setStatus('form.statusIncomplete', 'warn');
       return;
     }
 
     submitBtn.disabled = true;
     submitBtn.setAttribute('aria-busy', 'true');
-    submitLabel.textContent = 'Enviando…';
-    setStatus('', '');
+    submitLabel.textContent = window.NYP_I18N[currentLang]['form.sending'];
+    setStatus(null, null);
 
     const [mlResult, serviceResult] = await Promise.allSettled([
       submitToMailerLite(data),
@@ -130,15 +183,15 @@
 
     submitBtn.disabled = false;
     submitBtn.removeAttribute('aria-busy');
-    submitLabel.textContent = 'Enviar mensaje';
+    submitLabel.textContent = window.NYP_I18N[currentLang]['form.submit'];
 
     if (serviceResult.status === 'fulfilled') {
-      setStatus('¡Gracias! Hemos recibido tu mensaje. Te responderemos en menos de 24h.', 'ok');
+      setStatus('form.statusOk', 'ok');
       form.reset();
     } else if (mlResult.status === 'fulfilled') {
-      setStatus('Te hemos añadido a nuestra lista, pero no hemos podido entregar tu mensaje. Escríbenos directamente a info@nodosypublicos.com.', 'warn');
+      setStatus('form.statusWarn', 'warn');
     } else {
-      setStatus('No hemos podido enviar tu mensaje. Escríbenos directamente a info@nodosypublicos.com.', 'error');
+      setStatus('form.statusError', 'error');
     }
   });
 })();

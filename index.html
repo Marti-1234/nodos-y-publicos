@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nodos y Públicos — IA aplicada a la gestión cultural</title>
-<meta name="description" content="Ayudamos a administraciones públicas y organizaciones culturales a incorporar la IA en sus procesos, equipos y decisiones de forma práctica, responsable y adaptada a su realidad.">
+<title id="nyp-title">Nodos y Públicos — IA aplicada a la gestión cultural</title>
+<meta name="description" id="nyp-meta-desc" content="Ayudamos a administraciones públicas y organizaciones culturales a incorporar la IA en sus procesos, equipos y decisiones de forma práctica, responsable y adaptada a su realidad.">
 
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
@@ -32,25 +32,33 @@
     <a href="#" class="nyp-logo"><img src="assets/logo.png" alt="Nodos y Públicos" width="240" height="60"></a>
     <nav class="nyp-nav">
       <ul class="nyp-nav-links">
-        <li><a href="#resolvemos">Qué resolvemos</a></li>
-        <li><a href="#paraquien">Para quién</a></li>
-        <li><a href="#comotrabajamos">Cómo trabajamos</a></li>
-        <li><a href="#casos">Casos de uso</a></li>
-        <li><a href="#sobre">Sobre nosotros</a></li>
+        <li><a href="#resolvemos" data-i18n="nav.resolvemos">Qué resolvemos</a></li>
+        <li><a href="#paraquien" data-i18n="nav.paraquien">Para quién</a></li>
+        <li><a href="#comotrabajamos" data-i18n="nav.comotrabajamos">Cómo trabajamos</a></li>
+        <li><a href="#casos" data-i18n="nav.casos">Casos de uso</a></li>
+        <li><a href="#sobre" data-i18n="nav.sobre">Sobre nosotros</a></li>
       </ul>
-      <a href="#contacto" class="nyp-cta-btn">Hablemos</a>
+      <div class="nyp-lang">
+        <button type="button" class="active" data-lang="es">ES</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <a href="#contacto" class="nyp-cta-btn" data-i18n="nav.cta">Hablemos</a>
     </nav>
     <button class="nyp-burger" id="nyp-burger" aria-expanded="false" aria-controls="nyp-mobile-nav" aria-label="Abrir menú">
       <span></span><span></span><span></span>
     </button>
   </div>
   <nav class="nyp-mobile-nav" id="nyp-mobile-nav">
-    <a href="#resolvemos">Qué resolvemos</a>
-    <a href="#paraquien">Para quién</a>
-    <a href="#comotrabajamos">Cómo trabajamos</a>
-    <a href="#casos">Casos de uso</a>
-    <a href="#sobre">Sobre nosotros</a>
-    <a href="#contacto" class="nyp-cta-btn">Hablemos</a>
+    <div class="nyp-lang">
+      <button type="button" class="active" data-lang="es">ES</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+    <a href="#resolvemos" data-i18n="nav.resolvemos">Qué resolvemos</a>
+    <a href="#paraquien" data-i18n="nav.paraquien">Para quién</a>
+    <a href="#comotrabajamos" data-i18n="nav.comotrabajamos">Cómo trabajamos</a>
+    <a href="#casos" data-i18n="nav.casos">Casos de uso</a>
+    <a href="#sobre" data-i18n="nav.sobre">Sobre nosotros</a>
+    <a href="#contacto" class="nyp-cta-btn" data-i18n="nav.cta">Hablemos</a>
   </nav>
 </header>
 
@@ -59,11 +67,11 @@
 <!-- ============ HERO ============ -->
 <section class="nyp-hero">
   <div class="nyp-hero-inner">
-    <div class="nyp-hero-eyebrow">IA + gestión cultural</div>
-    <h1>IA aplicada a la gestión cultural.</h1>
-    <p class="nyp-hero-sub">Ayudamos a administraciones públicas y organizaciones culturales a incorporar la IA en sus procesos, equipos y decisiones de forma práctica, responsable y adaptada a su realidad.</p>
+    <div class="nyp-hero-eyebrow" data-i18n="hero.eyebrow">IA + gestión cultural</div>
+    <h1 data-i18n="hero.h1">IA aplicada a la gestión cultural.</h1>
+    <p class="nyp-hero-sub" data-i18n="hero.sub">Ayudamos a administraciones públicas y organizaciones culturales a incorporar la IA en sus procesos, equipos y decisiones de forma práctica, responsable y adaptada a su realidad.</p>
     <div class="nyp-hero-ctas">
-      <a href="#contacto" class="nyp-cta-btn">Hablemos</a>
+      <a href="#contacto" class="nyp-cta-btn" data-i18n="hero.cta">Hablemos</a>
     </div>
   </div>
 </section>
@@ -71,22 +79,22 @@
 <!-- ============ LEGITIMIDAD ============ -->
 <section class="nyp-trust">
   <div class="nyp-wrap">
-    <div class="nyp-trust-kicker nyp-eyebrow">Organizaciones con las que hemos trabajado</div>
-    <p class="nyp-trust-title">Experiencia con administraciones públicas, instituciones, redes y organizaciones culturales de Europa y América en proyectos de formación, transformación y aplicación de IA a la gestión.</p>
+    <div class="nyp-trust-kicker nyp-eyebrow" data-i18n="trust.kicker">Organizaciones con las que hemos trabajado</div>
+    <p class="nyp-trust-title" data-i18n="trust.text">Experiencia con administraciones públicas, instituciones, redes y organizaciones culturales de Europa y América en proyectos de formación, transformación y aplicación de IA a la gestión.</p>
     <!-- Pendiente listado real de instituciones/logos — confirmar con Martí antes de sustituir estos placeholders -->
     <div class="nyp-logo-strip">
       <!-- LOGO: institución 1 -->
-      <div class="nyp-logo-slot">Logo pendiente</div>
+      <div class="nyp-logo-slot" data-i18n="trust.logoPending">Logo pendiente</div>
       <!-- LOGO: institución 2 -->
-      <div class="nyp-logo-slot">Logo pendiente</div>
+      <div class="nyp-logo-slot" data-i18n="trust.logoPending">Logo pendiente</div>
       <!-- LOGO: institución 3 -->
-      <div class="nyp-logo-slot">Logo pendiente</div>
+      <div class="nyp-logo-slot" data-i18n="trust.logoPending">Logo pendiente</div>
       <!-- LOGO: institución 4 -->
-      <div class="nyp-logo-slot">Logo pendiente</div>
+      <div class="nyp-logo-slot" data-i18n="trust.logoPending">Logo pendiente</div>
       <!-- LOGO: institución 5 -->
-      <div class="nyp-logo-slot">Logo pendiente</div>
+      <div class="nyp-logo-slot" data-i18n="trust.logoPending">Logo pendiente</div>
       <!-- LOGO: institución 6 -->
-      <div class="nyp-logo-slot">Logo pendiente</div>
+      <div class="nyp-logo-slot" data-i18n="trust.logoPending">Logo pendiente</div>
     </div>
   </div>
 </section>
@@ -95,40 +103,40 @@
 <section id="resolvemos">
   <div class="nyp-wrap">
     <div class="nyp-section-head">
-      <div class="nyp-eyebrow">Qué resolvemos</div>
-      <h2>Dónde puede aportar valor la IA en una organización cultural</h2>
-      <p>La IA puede ayudar a reducir carga, ordenar información y mejorar procesos en distintas áreas de la gestión cultural. El punto de partida no es la herramienta, sino una necesidad real de la organización.</p>
+      <div class="nyp-eyebrow" data-i18n="resolvemos.eyebrow">Qué resolvemos</div>
+      <h2 data-i18n="resolvemos.title">Dónde puede aportar valor la IA en una organización cultural</h2>
+      <p data-i18n="resolvemos.intro">La IA puede ayudar a reducir carga, ordenar información y mejorar procesos en distintas áreas de la gestión cultural. El punto de partida no es la herramienta, sino una necesidad real de la organización.</p>
     </div>
     <div class="nyp-resolve-grid">
       <div class="nyp-resolve-card">
         <div class="nyp-resolve-num">01</div>
-        <h3>Comunicación, marketing y públicos</h3>
-        <p>Crear y adaptar contenidos, segmentar mensajes y trabajar con información de públicos de forma más ágil. <strong>Resultado:</strong> más capacidad de comunicación y mensajes mejor adaptados a cada audiencia.</p>
+        <h3 data-i18n="resolvemos.c1.h">Comunicación, marketing y públicos</h3>
+        <p data-i18n="resolvemos.c1.p">Crear y adaptar contenidos, segmentar mensajes y trabajar con información de públicos de forma más ágil. <strong>Resultado:</strong> más capacidad de comunicación y mensajes mejor adaptados a cada audiencia.</p>
       </div>
       <div class="nyp-resolve-card">
         <div class="nyp-resolve-num">02</div>
-        <h3>Operaciones y conocimiento</h3>
-        <p>Ordenar información, documentar procesos, resumir reuniones y preservar conocimiento interno. <strong>Resultado:</strong> menos tareas repetitivas, procesos más claros y conocimiento más fácil de compartir.</p>
+        <h3 data-i18n="resolvemos.c2.h">Operaciones y conocimiento</h3>
+        <p data-i18n="resolvemos.c2.p">Ordenar información, documentar procesos, resumir reuniones y preservar conocimiento interno. <strong>Resultado:</strong> menos tareas repetitivas, procesos más claros y conocimiento más fácil de compartir.</p>
       </div>
       <div class="nyp-resolve-card">
         <div class="nyp-resolve-num">03</div>
-        <h3>Gestión, reporting y financiación</h3>
-        <p>Apoyar la preparación de informes, memorias, convocatorias, justificaciones, pliegos y documentación técnica o administrativa. <strong>Resultado:</strong> menos tiempo en tareas mecánicas, mejor coordinación y borradores más completos para revisión.</p>
+        <h3 data-i18n="resolvemos.c3.h">Gestión, reporting y financiación</h3>
+        <p data-i18n="resolvemos.c3.p">Apoyar la preparación de informes, memorias, convocatorias, justificaciones, pliegos y documentación técnica o administrativa. <strong>Resultado:</strong> menos tiempo en tareas mecánicas, mejor coordinación y borradores más completos para revisión.</p>
       </div>
       <div class="nyp-resolve-card">
         <div class="nyp-resolve-num">04</div>
-        <h3>Mediación, contenidos y accesibilidad</h3>
-        <p>Preparar y adaptar materiales para distintos públicos, contextos y necesidades de accesibilidad. <strong>Resultado:</strong> mayor capacidad para producir y adaptar contenidos sin sustituir el criterio cultural y pedagógico.</p>
+        <h3 data-i18n="resolvemos.c4.h">Mediación, contenidos y accesibilidad</h3>
+        <p data-i18n="resolvemos.c4.p">Preparar y adaptar materiales para distintos públicos, contextos y necesidades de accesibilidad. <strong>Resultado:</strong> mayor capacidad para producir y adaptar contenidos sin sustituir el criterio cultural y pedagógico.</p>
       </div>
       <div class="nyp-resolve-card">
         <div class="nyp-resolve-num">05</div>
-        <h3>Gobernanza y uso responsable</h3>
-        <p>Definir qué usos tienen sentido, qué datos pueden utilizarse, quién revisa los resultados y qué decisiones deben seguir siendo humanas. <strong>Resultado:</strong> criterios compartidos para utilizar la IA con mayor seguridad, coherencia y confianza.</p>
+        <h3 data-i18n="resolvemos.c5.h">Gobernanza y uso responsable</h3>
+        <p data-i18n="resolvemos.c5.p">Definir qué usos tienen sentido, qué datos pueden utilizarse, quién revisa los resultados y qué decisiones deben seguir siendo humanas. <strong>Resultado:</strong> criterios compartidos para utilizar la IA con mayor seguridad, coherencia y confianza.</p>
       </div>
     </div>
-    <p class="nyp-section-close">La IA prepara, ordena y propone. Las decisiones culturales e institucionales siguen siendo humanas.</p>
+    <p class="nyp-section-close" data-i18n="resolvemos.close">La IA prepara, ordena y propone. Las decisiones culturales e institucionales siguen siendo humanas.</p>
     <div class="nyp-resolve-cta">
-      <a href="#contacto" class="nyp-text-cta">Quiero más información →</a>
+      <a href="#contacto" class="nyp-text-cta" data-i18n="resolvemos.cta">Quiero más información →</a>
     </div>
   </div>
 </section>
@@ -138,18 +146,18 @@
   <div class="nyp-wrap">
     <div class="nyp-para-wrap">
       <div>
-        <div class="nyp-eyebrow">Para quién</div>
-        <h2>Para equipos y organizaciones que gestionan cultura</h2>
-        <p>Trabajamos con administraciones públicas, teatros, museos, festivales, centros culturales, fundaciones, redes y circuitos que quieren incorporar la IA de forma útil, realista y adaptada a su día a día.</p>
+        <div class="nyp-eyebrow" data-i18n="paraquien.eyebrow">Para quién</div>
+        <h2 data-i18n="paraquien.title">Para equipos y organizaciones que gestionan cultura</h2>
+        <p data-i18n="paraquien.text">Trabajamos con administraciones públicas, teatros, museos, festivales, centros culturales, fundaciones, redes y circuitos que quieren incorporar la IA de forma útil, realista y adaptada a su día a día.</p>
       </div>
       <div class="nyp-tags">
-        <span class="nyp-tag">Administración pública cultural</span>
-        <span class="nyp-tag">Gestores y gestoras culturales</span>
-        <span class="nyp-tag">Teatros y espacios escénicos</span>
-        <span class="nyp-tag">Museos y patrimonio</span>
-        <span class="nyp-tag">Festivales y eventos</span>
-        <span class="nyp-tag">Centros culturales</span>
-        <span class="nyp-tag">Fundaciones, asociaciones, redes y circuitos</span>
+        <span class="nyp-tag" data-i18n="paraquien.t1">Administración pública cultural</span>
+        <span class="nyp-tag" data-i18n="paraquien.t2">Gestores y gestoras culturales</span>
+        <span class="nyp-tag" data-i18n="paraquien.t3">Teatros y espacios escénicos</span>
+        <span class="nyp-tag" data-i18n="paraquien.t4">Museos y patrimonio</span>
+        <span class="nyp-tag" data-i18n="paraquien.t5">Festivales y eventos</span>
+        <span class="nyp-tag" data-i18n="paraquien.t6">Centros culturales</span>
+        <span class="nyp-tag" data-i18n="paraquien.t7">Fundaciones, asociaciones, redes y circuitos</span>
       </div>
     </div>
   </div>
@@ -159,36 +167,36 @@
 <section id="comotrabajamos">
   <div class="nyp-wrap">
     <div class="nyp-section-head">
-      <div class="nyp-eyebrow">Cómo trabajamos contigo</div>
-      <h2>Metodología propia, aplicada a la gestión cultural</h2>
-      <p>No todas las organizaciones están en el mismo punto. Podemos empezar formando al equipo, identificando prioridades o aplicando la IA a un proceso concreto.</p>
+      <div class="nyp-eyebrow" data-i18n="comotrabajamos.eyebrow">Cómo trabajamos contigo</div>
+      <h2 data-i18n="comotrabajamos.title">Metodología propia, aplicada a la gestión cultural</h2>
+      <p data-i18n="comotrabajamos.intro">No todas las organizaciones están en el mismo punto. Podemos empezar formando al equipo, identificando prioridades o aplicando la IA a un proceso concreto.</p>
     </div>
     <div class="nyp-serv-grid">
       <div class="nyp-serv-card">
-        <span class="nyp-serv-tag">Vía 1 · Formación aplicada</span>
-        <h3>Formación aplicada</h3>
-        <p class="nyp-serv-lede">Para equipos que quieren empezar a usar la IA con criterio y sobre situaciones reales de trabajo.</p>
-        <p>Diseñamos talleres y programas adaptados a la organización, sus perfiles y sus procesos. Trabajamos con casos concretos para que la formación termine en usos revisables y aplicables.</p>
-        <div class="nyp-serv-result"><b>Resultado:</b> equipos más autónomos, criterios compartidos y primeros casos de uso listos para aplicar.</div>
+        <span class="nyp-serv-tag" data-i18n="comotrabajamos.v1.tag">Vía 1 · Formación aplicada</span>
+        <h3 data-i18n="comotrabajamos.v1.h">Formación aplicada</h3>
+        <p class="nyp-serv-lede" data-i18n="comotrabajamos.v1.lede">Para equipos que quieren empezar a usar la IA con criterio y sobre situaciones reales de trabajo.</p>
+        <p data-i18n="comotrabajamos.v1.p">Diseñamos talleres y programas adaptados a la organización, sus perfiles y sus procesos. Trabajamos con casos concretos para que la formación termine en usos revisables y aplicables.</p>
+        <div class="nyp-serv-result" data-i18n="comotrabajamos.v1.result"><b>Resultado:</b> equipos más autónomos, criterios compartidos y primeros casos de uso listos para aplicar.</div>
       </div>
       <div class="nyp-serv-card">
-        <span class="nyp-serv-tag">Vía 2 · Diagnóstico y hoja de ruta</span>
-        <h3>Diagnóstico y hoja de ruta</h3>
-        <p class="nyp-serv-lede">Para organizaciones que necesitan saber dónde puede aportar valor la IA y qué conviene priorizar.</p>
-        <p>Analizamos procesos, necesidades, capacidades y riesgos para identificar oportunidades realistas y ordenar los siguientes pasos.</p>
-        <div class="nyp-serv-result"><b>Resultado:</b> prioridades claras, casos de uso seleccionados y una hoja de ruta adaptada a la organización.</div>
+        <span class="nyp-serv-tag" data-i18n="comotrabajamos.v2.tag">Vía 2 · Diagnóstico y hoja de ruta</span>
+        <h3 data-i18n="comotrabajamos.v2.h">Diagnóstico y hoja de ruta</h3>
+        <p class="nyp-serv-lede" data-i18n="comotrabajamos.v2.lede">Para organizaciones que necesitan saber dónde puede aportar valor la IA y qué conviene priorizar.</p>
+        <p data-i18n="comotrabajamos.v2.p">Analizamos procesos, necesidades, capacidades y riesgos para identificar oportunidades realistas y ordenar los siguientes pasos.</p>
+        <div class="nyp-serv-result" data-i18n="comotrabajamos.v2.result"><b>Resultado:</b> prioridades claras, casos de uso seleccionados y una hoja de ruta adaptada a la organización.</div>
       </div>
       <div class="nyp-serv-card">
-        <span class="nyp-serv-tag">Vía 3 · Pilotos y acompañamiento</span>
-        <h3>Pilotos y acompañamiento</h3>
-        <p class="nyp-serv-lede">Para organizaciones que quieren aplicar la IA a un proceso concreto y comprobar su utilidad.</p>
-        <p>Diseñamos y probamos soluciones sobre tareas reales —reporting, comunicación, conocimiento interno, públicos, mediación u otros procesos— y acompañamos su puesta en práctica.</p>
-        <div class="nyp-serv-result"><b>Resultado:</b> procesos más ágiles, soluciones probadas y una base para medir, mejorar y escalar.</div>
+        <span class="nyp-serv-tag" data-i18n="comotrabajamos.v3.tag">Vía 3 · Pilotos y acompañamiento</span>
+        <h3 data-i18n="comotrabajamos.v3.h">Pilotos y acompañamiento</h3>
+        <p class="nyp-serv-lede" data-i18n="comotrabajamos.v3.lede">Para organizaciones que quieren aplicar la IA a un proceso concreto y comprobar su utilidad.</p>
+        <p data-i18n="comotrabajamos.v3.p">Diseñamos y probamos soluciones sobre tareas reales —reporting, comunicación, conocimiento interno, públicos, mediación u otros procesos— y acompañamos su puesta en práctica.</p>
+        <div class="nyp-serv-result" data-i18n="comotrabajamos.v3.result"><b>Resultado:</b> procesos más ágiles, soluciones probadas y una base para medir, mejorar y escalar.</div>
       </div>
     </div>
-    <p class="nyp-section-close">En cada proyecto acordamos qué puede hacer la IA, con qué información, quién revisa los resultados y qué decisiones siguen siendo humanas.</p>
+    <p class="nyp-section-close" data-i18n="comotrabajamos.close">En cada proyecto acordamos qué puede hacer la IA, con qué información, quién revisa los resultados y qué decisiones siguen siendo humanas.</p>
     <div class="nyp-resolve-cta">
-      <a href="#contacto" class="nyp-text-cta">Hablemos de tu organización →</a>
+      <a href="#contacto" class="nyp-text-cta" data-i18n="comotrabajamos.cta">Hablemos de tu organización →</a>
     </div>
   </div>
 </section>
@@ -197,69 +205,69 @@
 <section id="casos" class="nyp-section-alt">
   <div class="nyp-wrap">
     <div class="nyp-section-head">
-      <div class="nyp-eyebrow">Casos de uso</div>
-      <h2>De la necesidad a una aplicación concreta</h2>
-      <p>Ejemplos de cómo la IA puede ayudar a resolver necesidades reales de gestión cultural, con resultados concretos y siempre con criterio y revisión humana.</p>
+      <div class="nyp-eyebrow" data-i18n="casos.eyebrow">Casos de uso</div>
+      <h2 data-i18n="casos.title">De la necesidad a una aplicación concreta</h2>
+      <p data-i18n="casos.intro">Ejemplos de cómo la IA puede ayudar a resolver necesidades reales de gestión cultural, con resultados concretos y siempre con criterio y revisión humana.</p>
     </div>
 
     <div class="nyp-case-grid">
       <div class="nyp-case-featured">
         <div>
-          <div class="nyp-eyebrow">Caso real · Sala Ártika (comunicación, marketing y públicos)</div>
-          <h3>De comunicar a todos igual a entender mejor las motivaciones de cada público</h3>
-          <p>A partir de diez años de datos de públicos, trabajamos un modelo de segmentación motivacional para comprender mejor por qué asiste cada espectador y adaptar la comunicación a sus intereses.</p>
-          <p style="margin-top:14px;"><b style="color:#fff;">Aplicación:</b> segmentación de públicos, análisis de motivaciones y adaptación de mensajes.<br><b style="color:#fff;">Resultado:</b> campañas más relevantes y una mejora significativa de la interacción: el CTOR pasó de alrededor del 5% en comunicaciones generales a entre el 33% y el 54% en campañas segmentadas.</p>
-          <p class="nyp-case-method"><b>Método:</b> el resultado se apoya en un proceso de cuatro fases —segmentación motivacional, estudio de canales, matriz de mensajes por perfil, y medición y ajuste continuo— aplicado y corregido campaña tras campaña, no un informe puntual.</p>
+          <div class="nyp-eyebrow" data-i18n="casos.f.eyebrow">Caso real · Sala Ártika (comunicación, marketing y públicos)</div>
+          <h3 data-i18n="casos.f.h">De comunicar a todos igual a entender mejor las motivaciones de cada público</h3>
+          <p data-i18n="casos.f.p">A partir de diez años de datos de públicos, trabajamos un modelo de segmentación motivacional para comprender mejor por qué asiste cada espectador y adaptar la comunicación a sus intereses.</p>
+          <p style="margin-top:14px;" data-i18n="casos.f.appresult"><b style="color:#fff;">Aplicación:</b> segmentación de públicos, análisis de motivaciones y adaptación de mensajes.<br><b style="color:#fff;">Resultado:</b> campañas más relevantes y una mejora significativa de la interacción: el CTOR pasó de alrededor del 5% en comunicaciones generales a entre el 33% y el 54% en campañas segmentadas.</p>
+          <p class="nyp-case-method" data-i18n="casos.f.method"><b>Método:</b> el resultado se apoya en un proceso de cuatro fases —segmentación motivacional, estudio de canales, matriz de mensajes por perfil, y medición y ajuste continuo— aplicado y corregido campaña tras campaña, no un informe puntual.</p>
           <div class="nyp-case-cta">
             <!-- placeholder: enlazar a página de caso completo cuando exista -->
-            <a href="#contacto" class="nyp-text-cta" style="color:#fff; border-bottom-color:var(--nyp-orange);">Ver caso completo →</a>
+            <a href="#contacto" class="nyp-text-cta" style="color:#fff; border-bottom-color:var(--nyp-orange);" data-i18n="casos.f.cta">Ver caso completo →</a>
           </div>
         </div>
         <div class="nyp-case-stats">
           <div>
             <div class="nyp-case-stat-num">5% → 33–54%</div>
-            <div class="nyp-case-stat-label">CTOR: de campaña masiva a campaña segmentada</div>
+            <div class="nyp-case-stat-label" data-i18n="casos.f.stat1">CTOR: de campaña masiva a campaña segmentada</div>
           </div>
           <div>
             <div class="nyp-case-stat-num">13,2%</div>
-            <div class="nyp-case-stat-label">de la lista concentra la actividad</div>
+            <div class="nyp-case-stat-label" data-i18n="casos.f.stat2">de la lista concentra la actividad</div>
           </div>
           <div>
             <div class="nyp-case-stat-num">9,02</div>
-            <div class="nyp-case-stat-label">NPS del público fidelizado</div>
+            <div class="nyp-case-stat-label" data-i18n="casos.f.stat3">NPS del público fidelizado</div>
           </div>
           <div>
             <div class="nyp-case-stat-num">+98%</div>
-            <div class="nyp-case-stat-label">recuperación de espectadores en un año</div>
+            <div class="nyp-case-stat-label" data-i18n="casos.f.stat4">recuperación de espectadores en un año</div>
           </div>
         </div>
       </div>
 
       <div class="nyp-case-card nyp-case-card-ext">
-        <span class="nyp-case-ext-tag">Referencia externa</span>
-        <h3>Operaciones y conocimiento — National Gallery</h3>
-        <p>IA y modelos predictivos para aprovechar datos históricos de asistencia, ventas y programación en la planificación. <strong>Resultado:</strong> mejores previsiones, decisiones más informadas, mejor coordinación entre áreas y menos tiempo dedicado a análisis manual.</p>
+        <span class="nyp-case-ext-tag" data-i18n="casos.ext.tag">Referencia externa</span>
+        <h3 data-i18n="casos.ext1.h">Operaciones y conocimiento — National Gallery</h3>
+        <p data-i18n="casos.ext1.p">IA y modelos predictivos para aprovechar datos históricos de asistencia, ventas y programación en la planificación. <strong>Resultado:</strong> mejores previsiones, decisiones más informadas, mejor coordinación entre áreas y menos tiempo dedicado a análisis manual.</p>
       </div>
       <div class="nyp-case-card nyp-case-card-ext">
-        <span class="nyp-case-ext-tag">Referencia externa</span>
-        <h3>Gestión, reporting y financiación — Mark Morris Dance Group</h3>
-        <p>Un asistente convierte formularios de ayudas y portales en plantillas Word editables y estructuradas. <strong>Resultado:</strong> menos trabajo repetitivo, mejor colaboración entre equipos, documentos más consistentes y más tiempo para revisar contenido y estrategia.</p>
+        <span class="nyp-case-ext-tag" data-i18n="casos.ext.tag">Referencia externa</span>
+        <h3 data-i18n="casos.ext2.h">Gestión, reporting y financiación — Mark Morris Dance Group</h3>
+        <p data-i18n="casos.ext2.p">Un asistente convierte formularios de ayudas y portales en plantillas Word editables y estructuradas. <strong>Resultado:</strong> menos trabajo repetitivo, mejor colaboración entre equipos, documentos más consistentes y más tiempo para revisar contenido y estrategia.</p>
       </div>
       <div class="nyp-case-card nyp-case-card-ext">
-        <span class="nyp-case-ext-tag">Referencia externa</span>
-        <h3>Mediación, contenidos y accesibilidad — American Ballet Theatre</h3>
-        <p>IA para acelerar la preparación de talleres y materiales a partir de estructuras y contenidos ya validados. <strong>Resultado:</strong> reducción drástica del tiempo de preparación, mayor capacidad para producir materiales y más tiempo para la revisión pedagógica.</p>
+        <span class="nyp-case-ext-tag" data-i18n="casos.ext.tag">Referencia externa</span>
+        <h3 data-i18n="casos.ext3.h">Mediación, contenidos y accesibilidad — American Ballet Theatre</h3>
+        <p data-i18n="casos.ext3.p">IA para acelerar la preparación de talleres y materiales a partir de estructuras y contenidos ya validados. <strong>Resultado:</strong> reducción drástica del tiempo de preparación, mayor capacidad para producir materiales y más tiempo para la revisión pedagógica.</p>
       </div>
       <div class="nyp-case-card nyp-case-card-ext">
-        <span class="nyp-case-ext-tag">Referencia externa</span>
-        <h3>Gobernanza y uso responsable — Frederik Meijer Gardens &amp; Sculpture Park</h3>
-        <p>Un asistente interno con fuentes validadas, límites de datos y supervisión de un comité de IA. <strong>Resultado:</strong> uso más seguro y coherente de la IA, responsabilidades más claras y mayor confianza para integrarla en procesos reales.</p>
+        <span class="nyp-case-ext-tag" data-i18n="casos.ext.tag">Referencia externa</span>
+        <h3 data-i18n="casos.ext4.h">Gobernanza y uso responsable — Frederik Meijer Gardens &amp; Sculpture Park</h3>
+        <p data-i18n="casos.ext4.p">Un asistente interno con fuentes validadas, límites de datos y supervisión de un comité de IA. <strong>Resultado:</strong> uso más seguro y coherente de la IA, responsabilidades más claras y mayor confianza para integrarla en procesos reales.</p>
       </div>
     </div>
 
     <div class="nyp-lead-box">
-      <p>¿Quieres más información sobre estos casos y procesos? Déjanos tu email y te enviaremos una guía breve con ejemplos de IA aplicada a comunicación, operaciones, reporting, mediación y gobernanza cultural.</p>
-      <a href="#contacto" class="nyp-cta-btn">Recibir guía de casos de uso</a>
+      <p data-i18n="casos.lead.p">¿Quieres más información sobre estos casos y procesos? Déjanos tu email y te enviaremos una guía breve con ejemplos de IA aplicada a comunicación, operaciones, reporting, mediación y gobernanza cultural.</p>
+      <a href="#contacto" class="nyp-cta-btn" data-i18n="casos.lead.cta">Recibir guía de casos de uso</a>
     </div>
   </div>
 </section>
@@ -269,20 +277,20 @@
   <div class="nyp-wrap">
     <div class="nyp-about-wrap">
       <div>
-        <div class="nyp-eyebrow">Sobre nosotros</div>
-        <h2>Gestión cultural, transformación e IA</h2>
-        <p>Con base entre Madrid y Barcelona y vocación internacional, Nodos y Públicos reúne dos trayectorias complementarias: gestión cultural de primera línea y transformación digital e inteligencia artificial aplicada al sector cultural.</p>
-        <p>Martí Perramon y Javier Iturralde de Bracamonte han trabajado durante décadas con administraciones públicas, instituciones, equipamientos, redes y profesionales de la cultura en Europa y América.</p>
-        <p>Su enfoque combina conocimiento profundo del sector, experiencia práctica y capacidad para convertir la IA en mejoras concretas en procesos, equipos, públicos y toma de decisiones.</p>
+        <div class="nyp-eyebrow" data-i18n="sobre.eyebrow">Sobre nosotros</div>
+        <h2 data-i18n="sobre.title">Gestión cultural, transformación e IA</h2>
+        <p data-i18n="sobre.p1">Con base entre Madrid y Barcelona y vocación internacional, Nodos y Públicos reúne dos trayectorias complementarias: gestión cultural de primera línea y transformación digital e inteligencia artificial aplicada al sector cultural.</p>
+        <p data-i18n="sobre.p2">Martí Perramon y Javier Iturralde de Bracamonte han trabajado durante décadas con administraciones públicas, instituciones, equipamientos, redes y profesionales de la cultura en Europa y América.</p>
+        <p data-i18n="sobre.p3">Su enfoque combina conocimiento profundo del sector, experiencia práctica y capacidad para convertir la IA en mejoras concretas en procesos, equipos, públicos y toma de decisiones.</p>
       </div>
       <div class="nyp-founders">
         <div class="nyp-founder">
           <div class="nyp-founder-badge">MP</div>
           <div>
             <h4>Martí Perramon Llavina</h4>
-            <span class="nyp-founder-role">Socio y cofundador de Nodos y Públicos</span>
-            <p>Consultor, gestor cultural y formador con más de 35 años de experiencia en el sector cultural. Ha dirigido equipamientos escénicos, trabajado con el Institut de Cultura de Barcelona y desarrollado programas de formación para profesionales en instituciones como el INAEM, la Universidad Complutense de Madrid y universidades de América Latina.</p>
-            <p>Aporta un conocimiento directo de cómo funcionan las organizaciones culturales, sus equipos y sus procesos, y de las condiciones necesarias para que una transformación sea realmente aplicable.</p>
+            <span class="nyp-founder-role" data-i18n="sobre.founder1.role">Socio y cofundador de Nodos y Públicos</span>
+            <p data-i18n="sobre.founder1.bio1">Consultor, gestor cultural y formador con más de 35 años de experiencia en el sector cultural. Ha dirigido equipamientos escénicos, trabajado con el Institut de Cultura de Barcelona y desarrollado programas de formación para profesionales en instituciones como el INAEM, la Universidad Complutense de Madrid y universidades de América Latina.</p>
+            <p data-i18n="sobre.founder1.bio2">Aporta un conocimiento directo de cómo funcionan las organizaciones culturales, sus equipos y sus procesos, y de las condiciones necesarias para que una transformación sea realmente aplicable.</p>
             <div class="nyp-founder-links"><a href="https://www.linkedin.com/in/martiperramon/" target="_blank" rel="noopener">LinkedIn →</a></div>
           </div>
         </div>
@@ -290,10 +298,10 @@
           <div class="nyp-founder-badge">JI</div>
           <div>
             <h4>Javier Iturralde de Bracamonte, PhD</h4>
-            <span class="nyp-founder-role">Socio y cofundador de Nodos y Públicos</span>
-            <p>Gestor cultural, investigador y docente con más de veinticinco años de experiencia internacional, especializado en transformación digital e inteligencia artificial aplicada a la cultura.</p>
-            <p>Ha liderado proyectos de transformación e innovación para instituciones culturales y públicas, entre ellos la transformación digital de la promoción cultural española en Nueva York, la creación de Spain Red para conectar agentes culturales de España y Estados Unidos y proyectos de datos aplicados a la gestión cultural para AECID. A lo largo de su trayectoria ha colaborado con instituciones como Tate, MoMA PS1, Bronx Museum, AECID e Instituto Cervantes de Nueva York, entre otras.</p>
-            <p>Doctor cum laude por la Universitat Politècnica de València y máster en Gestión Cultural por Columbia University, combina su actividad profesional con la docencia como profesor adjunto en IE University y colaboraciones académicas en Columbia University y la Universitat de Barcelona.</p>
+            <span class="nyp-founder-role" data-i18n="sobre.founder2.role">Socio y cofundador de Nodos y Públicos</span>
+            <p data-i18n="sobre.founder2.bio1">Gestor cultural, investigador y docente con más de veinticinco años de experiencia internacional, especializado en transformación digital e inteligencia artificial aplicada a la cultura.</p>
+            <p data-i18n="sobre.founder2.bio2">Ha liderado proyectos de transformación e innovación para instituciones culturales y públicas, entre ellos la transformación digital de la promoción cultural española en Nueva York, la creación de Spain Red para conectar agentes culturales de España y Estados Unidos y proyectos de datos aplicados a la gestión cultural para AECID. A lo largo de su trayectoria ha colaborado con instituciones como Tate, MoMA PS1, Bronx Museum, AECID e Instituto Cervantes de Nueva York, entre otras.</p>
+            <p data-i18n="sobre.founder2.bio3">Doctor cum laude por la Universitat Politècnica de València y máster en Gestión Cultural por Columbia University, combina su actividad profesional con la docencia como profesor adjunto en IE University y colaboraciones académicas en Columbia University y la Universitat de Barcelona.</p>
             <div class="nyp-founder-links"><a href="https://www.linkedin.com/in/javier-iturralde-de-bracamonte/" target="_blank" rel="noopener">LinkedIn →</a></div>
           </div>
         </div>
@@ -306,21 +314,23 @@
 <section id="insights" class="nyp-section-alt">
   <div class="nyp-wrap">
     <div class="nyp-section-head">
-      <div class="nyp-eyebrow">Insights</div>
-      <h2>Insights para aplicar IA en cultura con criterio</h2>
-      <p>Contenido breve para equipos que quieren entender oportunidades, límites y formas prácticas de empezar.</p>
+      <div class="nyp-eyebrow" data-i18n="insights.eyebrow">Insights</div>
+      <h2 data-i18n="insights.title">Insights para aplicar IA en cultura con criterio</h2>
+      <p data-i18n="insights.intro">Contenido breve para equipos que quieren entender oportunidades, límites y formas prácticas de empezar.</p>
     </div>
+    <!-- Se muestra solo en inglés: los artículos del blog siguen publicándose únicamente en español -->
+    <p class="nyp-insight-note" id="nyp-insight-note" style="display:none;"></p>
     <!-- Enlaces provisionales al archivo del blog: sustituir por la URL del artículo concreto cuando se confirme la correspondencia -->
     <div class="nyp-insight-list">
-      <a class="nyp-insight-item" href="https://nodosypublicos.com/blog-y-recursos/" target="_blank" rel="noopener">IA en cultura: por dónde empezar <span>→</span></a>
-      <a class="nyp-insight-item" href="https://nodosypublicos.com/blog-y-recursos/" target="_blank" rel="noopener">Gobernanza y política de uso de IA <span>→</span></a>
-      <a class="nyp-insight-item" href="https://nodosypublicos.com/blog-y-recursos/" target="_blank" rel="noopener">IA para comunicación y públicos <span>→</span></a>
-      <a class="nyp-insight-item" href="https://nodosypublicos.com/blog-y-recursos/" target="_blank" rel="noopener">IA para reporting y subvenciones <span>→</span></a>
-      <a class="nyp-insight-item" href="https://nodosypublicos.com/blog-y-recursos/" target="_blank" rel="noopener">IA para mediación y accesibilidad <span>→</span></a>
+      <a class="nyp-insight-item" href="https://nodosypublicos.com/blog-y-recursos/" target="_blank" rel="noopener"><span data-i18n="insights.i1">IA en cultura: por dónde empezar</span><span>→</span></a>
+      <a class="nyp-insight-item" href="https://nodosypublicos.com/blog-y-recursos/" target="_blank" rel="noopener"><span data-i18n="insights.i2">Gobernanza y política de uso de IA</span><span>→</span></a>
+      <a class="nyp-insight-item" href="https://nodosypublicos.com/blog-y-recursos/" target="_blank" rel="noopener"><span data-i18n="insights.i3">IA para comunicación y públicos</span><span>→</span></a>
+      <a class="nyp-insight-item" href="https://nodosypublicos.com/blog-y-recursos/" target="_blank" rel="noopener"><span data-i18n="insights.i4">IA para reporting y subvenciones</span><span>→</span></a>
+      <a class="nyp-insight-item" href="https://nodosypublicos.com/blog-y-recursos/" target="_blank" rel="noopener"><span data-i18n="insights.i5">IA para mediación y accesibilidad</span><span>→</span></a>
     </div>
     <div class="nyp-insight-cta">
-      <a href="https://nodosypublicos.com/blog-y-recursos/" class="nyp-cta-outline" target="_blank" rel="noopener">Ver todos los artículos</a>
-      <a href="#contacto" class="nyp-cta-outline">Recibir recursos sobre IA y cultura</a>
+      <a href="https://nodosypublicos.com/blog-y-recursos/" class="nyp-cta-outline" target="_blank" rel="noopener" data-i18n="insights.archive">Ver todos los artículos</a>
+      <a href="#contacto" class="nyp-cta-outline" data-i18n="insights.subscribe">Recibir recursos sobre IA y cultura</a>
     </div>
   </div>
 </section>
@@ -329,52 +339,53 @@
 <section id="contacto" class="nyp-diag">
   <div class="nyp-wrap">
     <div class="nyp-section-head">
-      <div class="nyp-eyebrow">Siguiente paso</div>
-      <h2>¿Quieres saber por dónde empezar con la IA en tu organización cultural?</h2>
-      <p>Cuéntanos brevemente tu contexto y revisamos contigo qué usos de IA pueden tener sentido para tu equipo, con qué límites y por dónde empezar.</p>
+      <div class="nyp-eyebrow" data-i18n="contacto.eyebrow">Siguiente paso</div>
+      <h2 data-i18n="contacto.title">¿Quieres saber por dónde empezar con la IA en tu organización cultural?</h2>
+      <p data-i18n="contacto.text">Cuéntanos brevemente tu contexto y revisamos contigo qué usos de IA pueden tener sentido para tu equipo, con qué límites y por dónde empezar.</p>
     </div>
 
     <form class="nyp-form" id="nyp-contact-form" novalidate>
       <div class="nyp-form-row">
         <div class="nyp-form-field">
-          <label for="nyp-name">Nombre</label>
+          <label for="nyp-name" data-i18n="form.name">Nombre</label>
           <input type="text" id="nyp-name" name="nombre" autocomplete="name" required>
         </div>
         <div class="nyp-form-field">
-          <label for="nyp-email">Email</label>
+          <label for="nyp-email" data-i18n="form.email">Email</label>
           <input type="email" id="nyp-email" name="email" autocomplete="email" required>
         </div>
       </div>
       <div class="nyp-form-field">
-        <label for="nyp-org">Tipo de organización</label>
+        <label for="nyp-org" data-i18n="form.org">Tipo de organización</label>
+        <!-- El "value" de cada opción se mantiene siempre en español (categoría canónica para MailerLite / email); solo se traduce el texto visible. -->
         <select id="nyp-org" name="tipo_organizacion" required>
           <option value="">—</option>
-          <option>Instituciones estatales o locales | Gestionan teatros municipales, bibliotecas públicas y archivos históricos.</option>
-          <option>Museos oficiales y centros de arte: espacios financiados con fondos públicos para proteger y mostrar el patrimonio</option>
-          <option>Industrias culturales y creativas: empresas de bienes y servicios, agencias de comunicación cultural, editoriales de libros, productoras de cine, discográficas, estudios de diseño, etc.</option>
-          <option>Salas alternativas de teatro, música, etc.</option>
-          <option>Galerías de arte</option>
-          <option>Asociaciones culturales: fomentan tradiciones locales, teatro aficionado o música popular.</option>
-          <option>Fundaciones culturales: patrimoniales y de conservación, promoción y mecenazgo, difusión y gestión de espacios.</option>
-          <option>Otros</option>
+          <option value="Instituciones estatales o locales | Gestionan teatros municipales, bibliotecas públicas y archivos históricos." data-i18n="form.org1">Instituciones estatales o locales | Gestionan teatros municipales, bibliotecas públicas y archivos históricos.</option>
+          <option value="Museos oficiales y centros de arte: espacios financiados con fondos públicos para proteger y mostrar el patrimonio" data-i18n="form.org2">Museos oficiales y centros de arte: espacios financiados con fondos públicos para proteger y mostrar el patrimonio</option>
+          <option value="Industrias culturales y creativas: empresas de bienes y servicios, agencias de comunicación cultural, editoriales de libros, productoras de cine, discográficas, estudios de diseño, etc." data-i18n="form.org3">Industrias culturales y creativas: empresas de bienes y servicios, agencias de comunicación cultural, editoriales de libros, productoras de cine, discográficas, estudios de diseño, etc.</option>
+          <option value="Salas alternativas de teatro, música, etc." data-i18n="form.org4">Salas alternativas de teatro, música, etc.</option>
+          <option value="Galerías de arte" data-i18n="form.org5">Galerías de arte</option>
+          <option value="Asociaciones culturales: fomentan tradiciones locales, teatro aficionado o música popular." data-i18n="form.org6">Asociaciones culturales: fomentan tradiciones locales, teatro aficionado o música popular.</option>
+          <option value="Fundaciones culturales: patrimoniales y de conservación, promoción y mecenazgo, difusión y gestión de espacios." data-i18n="form.org7">Fundaciones culturales: patrimoniales y de conservación, promoción y mecenazgo, difusión y gestión de espacios.</option>
+          <option value="Otros" data-i18n="form.org8">Otros</option>
         </select>
       </div>
       <div class="nyp-form-field">
-        <label for="nyp-message">Mensaje</label>
+        <label for="nyp-message" data-i18n="form.message">Mensaje</label>
         <textarea id="nyp-message" name="mensaje" maxlength="1024" required></textarea>
       </div>
       <div class="nyp-form-submit">
         <button type="submit" id="nyp-form-submit-btn">
           <span class="nyp-form-spinner" aria-hidden="true"></span>
-          <span class="nyp-form-submit-label">Enviar mensaje</span>
+          <span class="nyp-form-submit-label" data-i18n="form.submit">Enviar mensaje</span>
         </button>
       </div>
       <p class="nyp-form-status" id="nyp-form-status" role="status" aria-live="polite"></p>
     </form>
 
     <p class="nyp-form-legal">
-      Al enviar este formulario aceptas nuestra <a href="https://nodosypublicos.com/privacidad/" target="_blank" rel="noopener">política de privacidad</a>.
-      <span class="nyp-form-note">Respondemos en menos de 24h laborables.</span>
+      <span data-i18n="form.legal">Al enviar este formulario aceptas nuestra <a href="https://nodosypublicos.com/privacidad/" target="_blank" rel="noopener">política de privacidad</a>.</span>
+      <span class="nyp-form-note" data-i18n="form.note">Respondemos en menos de 24h laborables.</span>
     </p>
   </div>
 </section>
@@ -390,14 +401,15 @@
       </div>
       <div class="nyp-footer-names">
         <span>Martí Perramon · Javier Iturralde de Bracamonte</span>
-        &nbsp;·&nbsp;<a href="https://nodosypublicos.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal</a>
-        &nbsp;·&nbsp;<a href="https://nodosypublicos.com/privacidad/" target="_blank" rel="noopener">Privacidad</a>
-        &nbsp;·&nbsp;<a href="https://nodosypublicos.com/cookies/" target="_blank" rel="noopener">Cookies</a>
+        &nbsp;·&nbsp;<a href="https://nodosypublicos.com/aviso-legal/" target="_blank" rel="noopener" data-i18n="footer.legal">Aviso legal</a>
+        &nbsp;·&nbsp;<a href="https://nodosypublicos.com/privacidad/" target="_blank" rel="noopener" data-i18n="footer.privacy">Privacidad</a>
+        &nbsp;·&nbsp;<a href="https://nodosypublicos.com/cookies/" target="_blank" rel="noopener" data-i18n="footer.cookies">Cookies</a>
       </div>
     </div>
   </div>
 </footer>
 
+<script src="i18n.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

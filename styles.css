@@ -71,6 +71,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   background:var(--nyp-orange); transition:width .25s ease;
 }
 .nyp-nav-links a:hover::after{width:100%;}
+.nyp-lang{
+  display:flex; border:1px solid var(--nyp-line); border-radius:20px; overflow:hidden;
+  font-family:var(--nyp-display); font-size:13px; font-weight:600; flex-shrink:0;
+}
+.nyp-lang button{background:none; border:none; padding:6px 13px; color:var(--nyp-ink-soft);}
+.nyp-lang button.active{background:var(--nyp-ink); color:#fff;}
+.nyp-mobile-nav .nyp-lang{align-self:flex-start; margin-bottom:10px;}
 .nyp-cta-btn{
   display:inline-flex; align-items:center; gap:8px;
   background:var(--nyp-orange); color:#fff; text-decoration:none;
@@ -332,7 +339,7 @@ footer{background:var(--nyp-paper-deep); padding:44px 0; border-top:1px solid va
   .nyp-case-featured{grid-template-columns:1fr;}
   .nyp-about-wrap{grid-template-columns:1fr;}
   .nyp-form-row{grid-template-columns:1fr;}
-  .nyp-nav-links, .nyp-header .nyp-cta-btn{display:none;}
+  .nyp-nav-links, .nyp-header .nyp-cta-btn, .nyp-header-inner > .nyp-nav > .nyp-lang{display:none;}
   .nyp-burger{display:block;}
   .nyp-mobile-nav{
     display:none; flex-direction:column; gap:2px; background:var(--nyp-paper);
