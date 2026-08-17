@@ -58,8 +58,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   max-width:var(--nyp-maxw); margin:0 auto; padding:14px 32px;
   display:flex; align-items:center; justify-content:space-between; gap:24px;
 }
-.nyp-logo{display:inline-flex; text-decoration:none;}
-.nyp-logo img{height:34px; width:auto;}
+.nyp-logo{display:inline-flex; align-items:center; gap:11px; text-decoration:none;}
+.nyp-logo-icon{height:38px; width:38px; border-radius:9px; flex-shrink:0;}
+.nyp-logo-word{height:24px; width:auto;}
 .nyp-nav{display:flex; align-items:center; gap:30px;}
 .nyp-nav-links{display:flex; gap:26px; list-style:none; margin:0; padding:0;}
 .nyp-nav-links a{
@@ -327,7 +328,8 @@ section{padding:96px 0;}
 /* ---------- FOOTER ---------- */
 footer{background:var(--nyp-paper-deep); padding:44px 0; border-top:1px solid var(--nyp-line);}
 .nyp-footer-inner{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;}
-.nyp-footer-inner .nyp-logo img{height:26px;}
+.nyp-footer-inner .nyp-logo-icon{height:28px; width:28px; border-radius:7px;}
+.nyp-footer-inner .nyp-logo-word{height:18px;}
 .nyp-footer-tag{font-size:13.5px; color:var(--nyp-ink-soft); margin-top:6px;}
 .nyp-footer-names{font-size:13px; color:var(--nyp-ink-soft); text-align:right; display:flex; flex-wrap:wrap; gap:4px 4px; justify-content:flex-end; align-items:center;}
 
