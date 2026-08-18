@@ -88,18 +88,23 @@ todos y no hace falta un archivo/índice aparte. Si en el futuro hay más
 artículos de los que caben en esa lista, habrá que construir una página de
 archivo (`/insights/` o similar) — no existe todavía.
 
-## Pendiente de confirmar con Martí
+## Estado del despliegue
 
-- **Logos de "Legitimidad"**: los 6 huecos ya están rellenos (AECID, ICOM,
-  Gobierno de la República Dominicana/Cultura, UNESCO/Mondiacult 25 España,
-  Dansa València, CCPE) en `assets/logos/`. El CCPE es una marca clara y va
-  envuelto en un chip oscuro (`.nyp-logo-strip-chip`) para mantener contraste
-  sobre el papel; el resto va directo.
-- **`CONTACT_SERVICE_URL`** en `script.js`: apunta a un dominio provisional
-  (`contacto.nodosypublicos.com`); actualizar con la URL real una vez desplegado
-  el recurso Coolify del microservicio.
-- **Insights**: los 6 enlaces ya apuntan a los artículos reales migrados
-  desde WordPress (ver sección "Insights (artículos)" arriba).
+Ya en producción en Coolify (VPS Hetzner, `5.75.163.66`):
+
+- **One-pager**: recurso "Static Site", dominio `preview.nodosypublicos.com`
+  con SSL (Let's Encrypt) — servido y verificado sin errores.
+- **`contact-service`**: recurso Docker independiente, dominio
+  `contacto.nodosypublicos.com` con SSL. Endpoint `/send` verificado
+  end-to-end (SMTP vía Google Workspace, CORS, validación de campos).
+- **MailerLite**: formulario real conectado (`MAILERLITE_FORM_ID` en
+  `script.js`, cuenta `38397`).
+- **Logos de "Legitimidad"**: los 6 huecos están rellenos en `assets/logos/`.
+
+**Pendiente**: apuntar el dominio raíz `nodosypublicos.com` (hoy sirve la
+web WordPress actual) al recurso de Coolify — deliberadamente dejado para
+el final, una vez todo lo demás ya está probado en el subdominio de
+pruebas. Ver instrucciones de DNS/Coolify más abajo.
 
 ## Despliegue en Coolify
 

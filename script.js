@@ -9,8 +9,8 @@
   const MAILERLITE_ACCOUNT_ID = '38397';
   const MAILERLITE_FORM_ID = '196072170508519379';
 
-  /* Segundo recurso Coolify (microservicio de contacto). Sustituir por
-   * la URL real una vez desplegado. */
+  /* Segundo recurso Coolify (microservicio de contacto), desplegado y
+   * verificado end-to-end (SMTP, CORS, validación). */
   const CONTACT_SERVICE_URL = 'https://contacto.nodosypublicos.com/send';
 
   const LANG_STORAGE_KEY = 'nyp-lang';
