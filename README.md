@@ -110,7 +110,9 @@ Dos recursos independientes:
 2. **`contact-service/`** — recurso Docker independiente (tiene su propio
    `Dockerfile`). Variables de entorno a configurar en Coolify (ver
    `contact-service/.env.example`):
-   - `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS` (cuenta Gandi)
+   - `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS` (Google Workspace —
+     confirmado por los MX de nodosypublicos.com; requiere contraseña de
+     aplicación, no la contraseña normal de la cuenta)
    - `CONTACT_EMAIL_TO=info@nodosypublicos.com`
    - `ALLOWED_ORIGIN` (dominio exacto del one-pager, sin barra final)
 
