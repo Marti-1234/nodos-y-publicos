@@ -236,6 +236,7 @@ section{padding:96px 0;}
 }
 .nyp-case-method b{color:rgba(255,255,255,0.85); font-weight:600;}
 .nyp-case-stats{display:grid; grid-template-columns:1fr 1fr; gap:22px;}
+.nyp-case-stat-wide{grid-column:1 / -1;}
 .nyp-case-stat-num{font-family:var(--nyp-display); font-weight:700; font-size:34px; color:var(--nyp-orange);}
 .nyp-case-stat-label{font-size:12.5px; color:rgba(255,255,255,0.6); margin-top:4px; line-height:1.3;}
 .nyp-case-cta{margin-top:24px;}
