@@ -28,9 +28,9 @@ Eso no es un problema de diseño. Es un problema de modelo.
 
 Aplicamos en Ártika nuestro modelo de segmentación por motivación cultural. No es segmentación demográfica (edad, género, barrio) ni conductual (qué han comprado antes). Es segmentación por lo que busca cada persona cuando decide ir al teatro.
 
-El cuestionario usa ocho afirmaciones en escala 1–10. Las respuestas generan ocho grupos operativos que se gestionan directamente en MailerLite —sin infraestructura técnica adicional, sin CRM de cinco cifras, sin equipo de datos.
+El cuestionario de 2021 usaba ocho afirmaciones en escala 1–10, gestionadas directamente en MailerLite —sin infraestructura técnica adicional, sin CRM de cinco cifras, sin equipo de datos. Las respuestas generaban ocho grupos operativos: Entretenimiento, Enriquecimiento, Esencia, Estimulación, Afirmación, Ocupados, Perspectiva y Expresivos.
 
-Los seis perfiles resultantes:
+Esa primera versión es el antecedente directo del modelo de seis perfiles que aplicamos hoy en Vindra:
 
 - **Curioso/a** — viene a descubrir. La novedad es el detonante.
 - **Viajero/a emocional** — viene a sentir algo, preferiblemente acompañado.
@@ -65,9 +65,9 @@ Los resultados:
 
 La apertura mejoró, sí. Pero eso es secundario. Lo que cambió radicalmente fue la activación: cuántos de los que abren hacen algo. De 5% a 33–54% no es una mejora marginal. Es cambiar de modelo.
 
-## El NPS lo confirma: esto no es satisfacción puntual
+## La puntuación de satisfacción lo confirma: esto no es satisfacción puntual
 
-El subconjunto que identificamos como Público Satisfecho (205 contactos, de los cuales 93 respondieron al NPS) tiene una puntuación media de 9,02 sobre 10. 109 de las 139 respuestas están en los valores 9 y 10.
+El subconjunto que identificamos como Público Satisfecho (205 contactos) tiene una puntuación media de 9,02 sobre 10 en la pregunta de satisfacción del flujo de email (139 respuestas con dato). 109 de esas 139 respuestas están en los valores 9 y 10.
 
 Eso no es lo que puntúas cuando te ha gustado un espectáculo. Es lo que puntúas cuando llevas tiempo sintiéndote bien tratado.
 
@@ -79,7 +79,7 @@ Una minoría fidelizada sostiene los indicadores agregados. Pero hay algo más i
 
 En 2021, con restricciones de aforo y 32 espectadores de media por función, Ártika mantuvo activos 57 espectáculos. Más que en 2019, su mejor año hasta entonces. No redujo la programación. Apostó por mantener el vínculo aunque no fuera rentable a corto plazo.
 
-En 2022, la recuperación fue del +98% en un año. En 2025, la sala opera con 90 espectadores de media por función y 12.613 espectadores anuales —un 105% más que en 2015.
+En 2022, la recuperación fue del +98% en un año. A esto se suma la reactivación de contactos de email inactivos desde hacía más de un año, que se multiplicó por diez tras aplicar la segmentación —la misma lógica de recuperación, esta vez en la bandeja de entrada. En 2025, la sala opera con 90 espectadores de media por función y 12.613 espectadores anuales —un 105% más que en 2015.
 
 Esa recuperación no ocurre por casualidad. Ocurre porque hay una comunidad construida en el tiempo, y porque en el peor momento alguien decidió seguir hablando con ella.
 

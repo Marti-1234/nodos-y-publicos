@@ -182,7 +182,6 @@ function footerHtml() {
         <span>Martí Perramon · Javier Iturralde de Bracamonte</span>
         &nbsp;·&nbsp;<a href="https://nodosypublicos.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal</a>
         &nbsp;·&nbsp;<a href="https://nodosypublicos.com/privacidad/" target="_blank" rel="noopener">Privacidad</a>
-        &nbsp;·&nbsp;<a href="https://nodosypublicos.com/cookies/" target="_blank" rel="noopener">Cookies</a>
       </div>
     </div>
   </div>
