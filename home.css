@@ -286,3 +286,8 @@ footer a { text-underline-offset: 3px; }
 .optional { font-weight: 400; color: var(--ink-soft); }
 .check a { color: inherit; }
 .posts-list-time { font-variant-numeric: tabular-nums; }
+.case p.body { max-width: 62ch; }
+.case .stats { margin-top: 24px; }
+.ctx a { color: var(--ink); font-weight: 600; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+.pilot { padding-top: 24px; border-top: 1px solid var(--line); color: var(--ink-soft); }
+.pilot b { color: var(--ink); font-weight: 600; }
