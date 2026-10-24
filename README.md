@@ -140,3 +140,17 @@ cp .env.example .env   # y rellenar credenciales SMTP reales
 npm install
 npm start
 ```
+
+## Últimos artículos (Transferencias Culturales)
+
+El bloque "Últimos artículos" de la home muestra las tres entradas más
+recientes del blog [Transferencias Culturales](https://transferenciasculturales.com).
+Su RSS no admite CORS, así que la lista se genera como HTML estático:
+
+```bash
+node build-articulos.js
+```
+
+Reescribe lo que hay entre `<!-- articulos:inicio -->` y
+`<!-- articulos:fin -->` en `index.html`. Después, commit y push para
+publicar.
